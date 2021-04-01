@@ -1,0 +1,149 @@
+<body opnKeydown="{
+	let myArrowKey = event.keyCode
+	let myAlphakey = event.Key
+
+	if (myArrowKey == 37) {
+		document.getElementbyId('mySpan01').innerHTML = 'hi from onKeydown left arrow pressed'
+	}
+
+	if (myAlphaKey == 'd') {
+		document.getElementbyId('mySpan01').innerHTML = 'hi from onKeydown d pressed'
+	}
+
+}">
+
+<h1 align=centre>T3A09-events-Sam</h1>
+
+Output span <span id="mySpan01">...</span><br><br>
+
+
+traditional onClick event: <input type=button value="onclick event" onclick="{
+	alert('hi from onlclick');
+	document.getElementbyId('mySpan01').innerHTML = 'Hi from onclick'
+}"> <br><br>
+
+This is <b> bold </b> this isn't <br>
+This is <b onMouseOver="{
+	document.getElementbyId('mySpan01').innerHTML = 'Hi from onMouseover'
+}"> Bold and onMousOver </b> this isnt <br><br>
+
+</body>
+
+
+<b> onChange: </b> <br><br>
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+</head>
+<body>
+
+Enter your name: <input type="text" id="fname" onchange="myFunction()">
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+</body>
+</html>
+
+<b> onSelect: </b> <br><br>
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "You selected some text";
+}
+</script>
+</head>
+<body>
+
+Some text: <input type="text" value="Hello world!" onselect="myFunction()">
+
+<p id="demo"></p>
+
+</body>
+</html>
+
+<b> onReset: </b> <br><br>
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function message() {
+  alert("This alert box was triggered by the onreset event handler");
+}
+</script>
+</head>
+<body>
+
+<form onreset="message()">
+  Enter your name: <input type="text" size="20">
+  <input type="reset">
+</form>
+
+</body>
+</html>
+
+
+<b> onFocus: </b> <br><br>
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction(x) {
+  x.style.background = "yellow";
+}
+</script>
+</head>
+<body>
+
+Enter your name: <input type="text" onfocus="myFunction(this)">
+
+<p>When the input field gets focus, a function is triggered which changes the background-color.</p>
+
+</body>
+</html>
+
+<b> onSubmit: </b><br><br>
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function confirmInput() {
+  fname = document.forms[0].fname.value;
+  alert("Hello " + fname + "! You will now be redirected to www.w3Schools.com");
+}
+</script>
+</head>
+<body>
+
+<form onsubmit="confirmInput()" action="https://imgur.com/gallery/lujAVMf">
+  Enter your name: <input id="fname" type="text" size="20">
+  <input type="submit">
+</form>
+
+</body>
+</html>
+
+<br><br><i> these are examples that I learned from W3schools </i>
+
+
+
+
+
+
+
+
+
+
+
+
+
