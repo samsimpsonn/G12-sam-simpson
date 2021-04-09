@@ -1,0 +1,28 @@
+<h1 align=center><font  color=red>T3A11-Objects-Sam</font></h1>
+
+<input id="myText01" type=text value="sam"><br>
+
+<input id="myText02" type=text value="18"><br>
+
+<input id="myText03" type=text value="White"><br>
+
+<br>
+
+<br>
+<input type="button" value="Show Object" onclick="{
+
+  myObject = {
+	'myName' : document.getElementById('myText01').value,
+	'myNumber' : document.getElementById('myText02').value,
+	'myHairColor' : document.getElementById('myText03').value,
+}
+
+  document.getElementById('myDiv01').innerHTML = 
+   
+   '<font color=blue><b> Name:</b></font> ' +  myObject.myName 
+   + '<br><font color=green><b>Age:</b></font>' +  myObject.myNumber 
+   + '<br><font color=red><b>Hair Color:</b></font>' +  myObject.myHairColor
+
+}">
+
+<div id="myDiv01"><hr></div>
