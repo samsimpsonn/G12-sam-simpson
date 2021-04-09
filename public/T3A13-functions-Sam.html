@@ -1,0 +1,22 @@
+<script>
+
+function myFun(myVar){
+   document.getElementById('myDiv01').innerHTML = document.getElementById('myText02').value +myVar
+}
+</script>
+
+
+<h1>T3A12-Functions-Sam</h1>
+
+Greeting: <input type=text id="myText01" value="hello, how are you">
+<br><br>
+Name: <input type=text id="myText02" value="sam! ">
+<br><br> 
+
+<input type="button" value="say hi" onclick="{
+	
+   myFun( document.getElementById('myText01').value)
+
+}"> <br>
+
+<div id="myDiv01">...</div>
